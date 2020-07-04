@@ -103,6 +103,7 @@ int main(int argc, char **argv){
     cout << "Resultados: " << tamanho << endl;
     
     //verificacao
+    
     for(int32_t contador = 1; contador < tamanho; contador++){
         if(V[contador] < V[contador - 1]){
             ordenado = false;

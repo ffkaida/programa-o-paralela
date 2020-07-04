@@ -73,6 +73,7 @@ int main(int argc, char** argv) {
 
             for(int32_t i = 0; i < tamanho; i++){
                 V[i] = rand() % tamanho;
+                //cout << V[i] << endl;
             }
 
             auto inicio = chrono::high_resolution_clock::now();
@@ -80,6 +81,7 @@ int main(int argc, char** argv) {
             auto resultado = chrono::high_resolution_clock::now() - inicio;
             long long tempo = chrono::duration_cast<chrono::microseconds>(resultado).count();
             cout << "Caso: " << a << " Tempo: " << tempo << endl;
+            //validar(V,tamanho);
             soma+= tempo;
         }
         cout << "Para tamanho = " << tamanho << " Tempo medio = " << (long double) soma/casos << endl;
